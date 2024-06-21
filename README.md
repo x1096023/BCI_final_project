@@ -39,11 +39,11 @@ Researchers utilized various feature extraction techniques, with many studies fa
 
    - Analyzing the hidden independent components within EEG using ICA with ICLabel
 
-![表格](https://github.com/x1096023/BCI_final_project/assets/69157513/0f0bb33b-7348-436e-80ad-0c34b5261561)
+![圖表](https://i.imgur.com/29e4hVd.png)
 
 ## Model Framework
-Our BCI architecture is showed below:
-
+Our BCI architecture is showed below:  
+![framework](https://i.imgur.com/Rp1MdhP.png)
 
 - Input/Output Mechanisms:
     - Input: Raw EEG data collected from subjects, who were recruited to be either consistently low or consistently high.
@@ -78,39 +78,41 @@ The data was divided into training and testing sets with a 6:4 split.
 - **Raw – xgb1: Raw Data (First time) with XGBoost**
   	- data picked：1\~37、39\~122
   	- accuracy: 0.78
-  	- Confusion matrix:
-  
-- **Raw – xgb1: Raw Data (Second time) with XGBoost**
+  	- Confusion matrix:  
+![Raw – xgb1](https://i.imgur.com/TzF22fn.png)
+- **Raw – xgb2: Raw Data (Second time) with XGBoost**
   	- data picked：1\~9、11\~37、39\~122
   	- accuracy: 0.72
-  	- Confusion matrix:
-
+  	- Confusion matrix:  
+![Raw – xgb2](https://i.imgur.com/NpTZzt6.png)
 - **Raw – forest1: Raw Data (First time) with random forest**
   	- data picked：1\~37、39\~122
   	- accuracy: 0.65
-  	- Confusion matrix:
-
+  	- Confusion matrix:  
+![Raw – forest1](https://i.imgur.com/CTjELcj.png)
 - **Raw – forest2: Raw Data (Second time) with random forest**
   	- data picked：1\~9、11\~37、39\~122
   	- accuracy: 0.67
-  	- Confusion matrix:
-
-- **ASR –Xgb1: Processed Data (First time) with random XGBoost**
+  	- Confusion matrix:  
+![Raw – forest2](https://i.imgur.com/6m6CE1r.png)
+- **ASR – xgb1: Processed Data (First time) with random XGBoost**
   	- accuracy: 0.86
-  	- Confusion matrix:
-
-- **ASR –Xgb2: Processed Data (Second time) with random XGBoost**
+  	- Confusion matrix:  
+![ASR – xgb1](https://i.imgur.com/hYXbUDB.png)
+- **ASR – xgb2: Processed Data (Second time) with random XGBoost**
   	- accuracy: 0.63
-  	- Confusion matrix:
-
-- **ASR –forest1: Processed Data (First time) with random forest**
+  	- Confusion matrix:  
+![ASR – xgb2](https://i.imgur.com/Czr7Y9Q.png)
+- **ASR – forest1: Processed Data (First time) with random forest**
   	- accuracy: 0.91
-  	- Confusion matrix:
-
-- **ASR –forest2: Processed Data (Second time) with random forest**
+  	- Confusion matrix:  
+![ASR – forest1](https://i.imgur.com/oQJaGez.png)
+- **ASR – forest2: Processed Data (Second time) with random forest**
   	- accuracy: 0.70
-  	- Confusion matrix:
-
+  	- Confusion matrix:  
+![ASR – forest2](https://i.imgur.com/QzYuEQW.png)
+- **Accuracy table**
+![Table](https://i.imgur.com/ELGWUwm.jpg)
 # Reference
 [1] Park, S. M. (2021, August 16). EEG machine learning. Retrieved from osf.io/8bsvr  
 
