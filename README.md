@@ -55,14 +55,16 @@ Our BCI architecture is showed below:
 - Classification
 -We applied two different machine learning models:
 * **XGBoost**  
-  XGBoost is a highly effective machine learning tool in BCI projects for classifying and interpreting EEG data. Its ability to handle complex, nonlinear data and deliver high performance makes it a valuable component in developing robust and accurate BCI systems.  
+  XGBoost is a highly effective machine learning tool in BCI projects for classifying and interpreting EEG data. Its ability to handle complex, nonlinear data and deliver high performance makes it a valuable component in developing robust and accurate BCI systems.
+  
 * **Random Forest**  
   Similar to XGBoost, after extracting features such as mean, standard deviation, and peak-to-peak amplitude for various EEG frequency bands (alpha, beta, theta, delta), Random Forest can classify these features to determine different cognitive states or detect conditions like epilepsy.
 The data was divided into training and testing sets with a 6:4 split.
 
 ## Validation
 - **Training and Testing on Separate Datasets**  
-	The dataset is split into two parts: a training set and a testing set (60% training, 40% testing). The model is trained on the training set and evaluated on the testing set. This method provides an initial assessment of the model's performance on unseen data.  
+	The dataset is split into two parts: a training set and a testing set (60% training, 40% testing). The model is trained on the training set and evaluated on the testing set. This method provides an initial assessment of the model's performance on unseen data.
+
 - **Confusion Matrix**  
 	It provides detailed insights into the performance of the classification model by displaying the true positives, false positives, true negatives, and false negatives.
 ## Usage
