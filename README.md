@@ -113,7 +113,7 @@ The data was divided into training and testing sets with a 6:4 split.
   	- accuracy: 0.70
   	- Confusion matrix:  
 ![ASR – forest2](https://i.imgur.com/QzYuEQW.png)
-- **Accuracy table**[^1]
+- **Accuracy table**
 ![Table](https://i.imgur.com/ELGWUwm.jpg)
 # Reference
 [^1]: Park, S. M. (2021, August 16). EEG machine learning. Retrieved from osf.io/8bsvr  
