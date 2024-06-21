@@ -8,19 +8,25 @@ Authors: X1096021 許絜茵 X1096023 潘和新 X1096028 余維廷
 - Our BCI system uses EEG signals to find out the characteristics of EEG from the dataset.
 
 ### Data description
-- **Experimental Design/Paradigm:**  
-	This dataset comprises resting EEG data from 122 college-aged participants.  Each participant engaged in alternating one-minute periods of eyes-open and eyes-closed tasks, marked by triggers such as OCCOCO or COOCOC. The data were collected between 2008 and 2010 at the John J.B. Allen lab at the University of Arizona.  
+- **Experimental Design/Paradigm:**
+
+	This dataset comprises resting EEG data from 122 college-aged participants.  Each participant engaged in alternating one-minute periods of eyes-open and eyes-closed tasks, marked by triggers such as OCCOCO or COOCOC. The data were collected between 2008 and 2010 at the John J.B. Allen lab at the University of Arizona.
+
 	All participants were reliably scored as either high or low on the Beck Depression Inventory (BDI), with some also undergoing clinical interviews. The experiment included two resting state sessions: the first one immediately after EEG hookup, lasting 6 minutes, and the second one about an hour after task performance, also lasting 6 minutes. Note that participant 516 lacks second resting data, and participant 544 was excluded from all analyses due to unstable BDI scores between mass and lab assessments.  
+
 	It is important to note that some (possibly all) participants may have mislabeled horizontal (HEOG) and vertical (VEOG) electrooculogram channels, and some files have had certain channels interpolated, with no raw data available for reversion. Despite these issues, the first resting session's data quality is high.
 
-- **Procedure for Collecting Data:**  
+- **Procedure for Collecting Data:**
+
 	Resting EEG data were collected from 122 college-aged participants, who are the same individuals involved in the Openneuro probe selection task. Each participant has matching task IDs across both datasets, allowing for easy correlation.  
-	The task was programmed using the DMDX language and included instructions for alternating one-minute periods of eyes open and eyes closed, with triggers indicating these periods (e.g., OCCOCO or COOCOC). Data collection took place between 2008 and 2010 in John J.B. Allen's lab at the University of Arizona.  
+
+	The task was programmed using the DMDX language and included instructions for alternating one-minute periods of eyes open and eyes closed, with triggers indicating these periods (e.g., OCCOCO or COOCOC). Data collection took place between 2008 and 2010 in John J.B. Allen's lab at the University of Arizona.
+
 	The dataset involved 122 college-age participants. Participants were consistently scored as either high or low on the Beck Depression Inventory (BDI), and some underwent clinical interviews (see .xls sheet for details). It should be noted that the horizontal (HEOG) and vertical (VEOG) electrooculogram channels might be mislabeled for some, if not all, participants. Additionally, some files have already had certain channels interpolated, with no raw data available for reversion.
-The first resting session lasted 6 minutes and was conducted immediately after the EEG setup, while the second session also lasted 6 minutes and was conducted about an hour after task performance. Participant 516 does not have data for the second resting session, and participant 544 was excluded from all analyses due to inconsistent BDI scores between mass and lab assessments (1-4 months apart). Despite these issues, the data quality of the first resting session is high, although the quality of the second resting session has not been reviewed.  
+
+	The first resting session lasted 6 minutes and was conducted immediately after the EEG setup, while the second session also lasted 6 minutes and was conducted about an hour after task performance. Participant 516 does not have data for the second resting session, and participant 544 was excluded from all analyses due to inconsistent BDI scores between mass and lab assessments (1-4 months apart). Despite these issues, the data quality of the first resting session is high, although the quality of the second resting session has not been reviewed.
 
 - **Data Source:**
-
    - The dataset is publicly available from researchers in John J.B. Allen lab at U Arizona.
    - We download it from OpenNeuro. [[link]](https://openneuro.org/datasets/ds003478/versions/1.1.0))
 - **Data Size:**
@@ -30,7 +36,8 @@ The first resting session lasted 6 minutes and was conducted immediately after t
 - **Quality Evaluation:**
    - Surveying and analyzing existing literature
    - Based on the review paper published by Atefeh S et al.[[4]](#ref4), they focus on the application of deep learning algorithms to detect and predict depression using EEG signals. Employing the Systematic Literature Review (SLR) method, they conducted a thorough evaluation of 22 articles published between 2016 and 2021. This review provides detailed summaries of each study and compares their significant aspects. They observed that CNN-based methods, including CNN, 1D CNN, 2D CNN, and 3D CNN, were the most commonly used, representing almost 50% of the total methods, with CNN alone accounting for about one-third. Combined models incorporating CNN and LSTM blocks were also notably popular.
-Researchers utilized various feature extraction techniques, with many studies favoring convolutional layers for end-to-end extraction of local features. The common workflow among the analyzed studies involved collecting EEG signals, removing artifacts and noise, extracting relevant features from the pre-processed signals, and using deep learning methods to classify subjects as depressive or normal.
+
+		Researchers utilized various feature extraction techniques, with many studies favoring convolutional layers for end-to-end extraction of local features. The common workflow among the analyzed studies involved collecting EEG signals, removing artifacts and noise, extracting relevant features from the pre-processed signals, and using deep learning methods to classify subjects as depressive or normal.
 
    - Analyzing the hidden independent components within EEG using ICA with ICLabel
 
@@ -106,10 +113,10 @@ The data was divided into training and testing sets with a 6:4 split.
   	- accuracy: 0.70
   	- Confusion matrix:  
 ![ASR – forest2](https://i.imgur.com/QzYuEQW.png)
-- **Accuracy table**
+- **Accuracy table**[^1]
 ![Table](https://i.imgur.com/ELGWUwm.jpg)
 # Reference
-[1] Park, S. M. (2021, August 16). EEG machine learning. Retrieved from osf.io/8bsvr  
+[^1]: Park, S. M. (2021, August 16). EEG machine learning. Retrieved from osf.io/8bsvr  
 
 [2] Ksibi A, Zakariah M, Menzli LJ, Saidani O, Almuqren L, Hanafieh RAM. Electroencephalography-Based Depression Detection Using Multiple Machine Learning Techniques. Diagnostics (Basel). 2023 May 17;13(10):1779. doi: 10.3390/diagnostics13101779. PMID: 37238263; PMCID: PMC10217709.  
 
