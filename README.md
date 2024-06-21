@@ -122,7 +122,7 @@ The data was divided into training and testing sets with a 6:4 split.
 
 [3] Jaseja H. Electroencephalography in the diagnosis and management of treatment-resistant depression with comorbid epilepsy: a novel strategy. Gen Psychiatr. 2023 Apr 17;36(2):e100868. doi: 10.1136/gpsych-2022-100868. PMID: 37082530; PMCID: PMC10111881.  
 
-[4] Atefeh Safayari, Hamidreza Bolhasani(2021). Depression diagnosis by deep learning using EEG signals: A systematic review. Medicine in Novel Technology and Devices.[[pdf]](https://www.sciencedirect.com/science/article/pii/S2590093521000461)
+<a name="ref4"></a>[4] Atefeh Safayari, Hamidreza Bolhasani(2021). Depression diagnosis by deep learning using EEG signals: A systematic review. Medicine in Novel Technology and Devices.[[pdf]](https://www.sciencedirect.com/science/article/pii/S2590093521000461)
 
 
 
