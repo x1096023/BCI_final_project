@@ -79,7 +79,7 @@ The data was divided into training and testing sets with a 6:4 split.
   	- data picked：1\~37、39\~122
   	- accuracy: 0.78
   	- Confusion matrix:
-
+  
 - **Raw – xgb1: Raw Data (Second time) with XGBoost**
   	- data picked：1\~9、11\~37、39\~122
   	- accuracy: 0.72
