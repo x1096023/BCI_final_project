@@ -53,7 +53,7 @@ Our BCI architecture is showed below:
 - Feature Extraction Approaches:
     - Feature extraction involves calculating the mean, standard deviation, and peak-to-peak amplitude for the alpha, beta, theta, and delta bands to be used as features.
 - Classification
--We applied three different machine learning models:
+-We applied two different machine learning models:
 * **XGBoost**
 
   XGBoost is a highly effective machine learning tool in BCI projects for classifying and interpreting EEG data. Its ability to handle complex, nonlinear data and deliver high performance makes it a valuable component in developing robust and accurate BCI systems.
