@@ -8,21 +8,16 @@ Authors: X1096021 許絜茵 X1096023 潘和新 X1096028 余維廷
 - Our BCI system uses EEG signals to find out the characteristics of EEG from the dataset.
 
 ### Data description
-- **Experimental Design/Paradigm:**
-This dataset comprises resting EEG data from 122 college-aged participants.  Each participant engaged in alternating one-minute periods of eyes-open and eyes-closed tasks, marked by triggers such as OCCOCO or COOCOC. The data were collected between 2008 and 2010 at the John J.B. Allen lab at the University of Arizona. 
+- **Experimental Design/Paradigm:**  
+	This dataset comprises resting EEG data from 122 college-aged participants.  Each participant engaged in alternating one-minute periods of eyes-open and eyes-closed tasks, marked by triggers such as OCCOCO or COOCOC. The data were collected between 2008 and 2010 at the John J.B. Allen lab at the University of Arizona.  
+	All participants were reliably scored as either high or low on the Beck Depression Inventory (BDI), with some also undergoing clinical interviews. The experiment included two resting state sessions: the first one immediately after EEG hookup, lasting 6 minutes, and the second one about an hour after task performance, also lasting 6 minutes. Note that participant 516 lacks second resting data, and participant 544 was excluded from all analyses due to unstable BDI scores between mass and lab assessments.  
+	It is important to note that some (possibly all) participants may have mislabeled horizontal (HEOG) and vertical (VEOG) electrooculogram channels, and some files have had certain channels interpolated, with no raw data available for reversion. Despite these issues, the first resting session's data quality is high.
 
-
-All participants were reliably scored as either high or low on the Beck Depression Inventory (BDI), with some also undergoing clinical interviews. The experiment included two resting state sessions: the first one immediately after EEG hookup, lasting 6 minutes, and the second one about an hour after task performance, also lasting 6 minutes. Note that participant 516 lacks second resting data, and participant 544 was excluded from all analyses due to unstable BDI scores between mass and lab assessments. 
-
-It is important to note that some (possibly all) participants may have mislabeled horizontal (HEOG) and vertical (VEOG) electrooculogram channels, and some files have had certain channels interpolated, with no raw data available for reversion. Despite these issues, the first resting session's data quality is high. 
-
-- **Procedure for Collecting Data:**
-Resting EEG data were collected from 122 college-aged participants, who are the same individuals involved in the Openneuro probe selection task. Each participant has matching task IDs across both datasets, allowing for easy correlation.
-
-The task was programmed using the DMDX language and included instructions for alternating one-minute periods of eyes open and eyes closed, with triggers indicating these periods (e.g., OCCOCO or COOCOC). Data collection took place between 2008 and 2010 in John J.B. Allen's lab at the University of Arizona.
-
-The dataset involved 122 college-age participants. Participants were consistently scored as either high or low on the Beck Depression Inventory (BDI), and some underwent clinical interviews (see .xls sheet for details). It should be noted that the horizontal (HEOG) and vertical (VEOG) electrooculogram channels might be mislabeled for some, if not all, participants. Additionally, some files have already had certain channels interpolated, with no raw data available for reversion.
-The first resting session lasted 6 minutes and was conducted immediately after the EEG setup, while the second session also lasted 6 minutes and was conducted about an hour after task performance. Participant 516 does not have data for the second resting session, and participant 544 was excluded from all analyses due to inconsistent BDI scores between mass and lab assessments (1-4 months apart). Despite these issues, the data quality of the first resting session is high, although the quality of the second resting session has not been reviewed.
+- **Procedure for Collecting Data:**  
+	Resting EEG data were collected from 122 college-aged participants, who are the same individuals involved in the Openneuro probe selection task. Each participant has matching task IDs across both datasets, allowing for easy correlation.  
+	The task was programmed using the DMDX language and included instructions for alternating one-minute periods of eyes open and eyes closed, with triggers indicating these periods (e.g., OCCOCO or COOCOC). Data collection took place between 2008 and 2010 in John J.B. Allen's lab at the University of Arizona.  
+	The dataset involved 122 college-age participants. Participants were consistently scored as either high or low on the Beck Depression Inventory (BDI), and some underwent clinical interviews (see .xls sheet for details). It should be noted that the horizontal (HEOG) and vertical (VEOG) electrooculogram channels might be mislabeled for some, if not all, participants. Additionally, some files have already had certain channels interpolated, with no raw data available for reversion.
+The first resting session lasted 6 minutes and was conducted immediately after the EEG setup, while the second session also lasted 6 minutes and was conducted about an hour after task performance. Participant 516 does not have data for the second resting session, and participant 544 was excluded from all analyses due to inconsistent BDI scores between mass and lab assessments (1-4 months apart). Despite these issues, the data quality of the first resting session is high, although the quality of the second resting session has not been reviewed.  
 
 - **Data Source:**
 
